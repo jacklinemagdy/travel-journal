@@ -1,15 +1,100 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+ 
+body {
+  margin: 0;
 }
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+.container {
+    margin: 45px 40px;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+header {
+  background-color: #F55A5A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  color: white;
+}
+
+.title-icon {
+  margin-right: 7px;
+  width: 25px;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: inter;
+}
+
+article {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.main-image-container {
+  width: 150px;
+  height: 200px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-right: 19px;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.first-info-container {
+  display: flex;
+  align-items: center;
+}
+
+.marker {
+  width: 15px;
+  margin-right: 7px;
+}
+
+.country {
+  text-transform: uppercase;
+  margin-right: 12px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.journal-link {
+  color: #2B283A;
+  font-size: .9rem;
+  text-decoration: underline;
+}
+
+.journal-link:visited {
+  color: #918E9B;
+}
+
+.entry-title {
+  margin-top: 3px;
+  margin-bottom: 15px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.trip-dates {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.entry-text {
+    line-height: 1.5;
+    font-size: 0.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
